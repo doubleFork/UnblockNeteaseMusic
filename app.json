@@ -1,0 +1,10 @@
+{
+  "name": "netease proxy",
+  "description": "https://github.com/doubleFork/UnblockNeteaseMusic",
+  "env": {
+    "test": {
+      "description": "just test",
+      "value": "https://www.google.com/"
+    }
+  }
+}

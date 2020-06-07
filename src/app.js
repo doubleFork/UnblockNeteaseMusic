@@ -17,7 +17,8 @@ const config = require('./cli.js')
 
 // global.address = config.address
 global.address = '127.0.0.1'
-config.port = (config.port || process.env.PORT).split(':').map(string => parseInt(string))
+// config.port = (config.port || 8080).split(':').map(string => parseInt(string))
+config.port = [process.env.PORT]
 const invalid = value => (isNaN(value) || value < 1 || value > 65535)
 if (config.port.some(invalid)) {
 	console.log('Port must be a number higher than 0 and lower than 65535.')
